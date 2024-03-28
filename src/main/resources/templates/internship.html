@@ -1,45 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internship Opportunities</title>
-  <link rel="stylesheet" href="/templates/css/internship.css">
-  <script src="/js/internship.js"></script>
+  <link rel="stylesheet" href="/templates/static/css/internship.css">
+  <script src="/templates/js/internship.js"></script>
 </head>
+
 <body>
-  <header>
-    <h1>Internship Opportunities</h1>
-  </header>
-  <main>
+  <h1>Internship Details</h1>
+
+    <div id="logleft">
     <h2>Internship Details</h2>
     <p>To apply for internship opportunities, fill in the form below: </p><br/>
     <form action="" method="post" id="submitform">
     <label for="internship_id">Internship ID</label>
-    <input type="text" id="internship_id" name="internship_id" required><br><br>
+    <input type="text" id="internship_id" name="internship_id" class="input" required><br><br>
 
     <label for="internship_title">Internship title</label>
-    <input type="text" id="internship_title" name="internship_title" required><br><br>
+    <input type="text" id="internship_title" name="internship_title" class="input" required><br><br>
 
     <label for="location">Location</label>
-    <input type="text" id="location" name="location" required><br><br>
+    <input type="text" id="location" name="location" class="input" required><br><br>
 
     <label for="description">Description</label>
-    <input type="text" id="description" name="description"><br><br>
+    <input type="text" id="description" name="description" class="input"><br><br>
 
     <label for="responsibility">Responsibility</label>
-    <input type="text" id="responsibility" name="responsibility" required><br><br>
+    <input type="text" id="responsibility" name="responsibility" class="input" required><br><br>
 
     <label for="startdate">Start Date</label>
-    <input type="text" id="startdate" name="startdate" required><br><br>
+    <input type="text" id="startdate" name="startdate" class="input" required><br><br>
 
     <label for="enddate">End Date</label>
-    <input type="text" id="enddate" name="enddate" required><br><br>
+    <input type="text" id="enddate" name="enddate" class="input" required><br><br>
 
-    <button type="submit" onclick="applyNow()">Apply Now</button><br><br>
-    <button type="button" onclick="homePage()">Home</button>
+    <button type="submit" onclick="applyNow()" id="applybtn">Apply Now</button><br><br>
+    <button type="button" onclick="homePage()" id="homebtn">Home</button>
     </form>
-    </main>
+  </div>
   <footer>
     <p>&copy; 2024 University Career Portal</p>
   </footer>

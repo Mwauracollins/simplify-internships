@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mentor Registration Portal</title>
-  <script src="/js/registermentor.js"></script>
+  <script src="/templates/js/registermentor.js"></script>
+  <link rel="stylesheet" href="/templates/static/css/registermentor.css">
 </head>
 <body>
   <h1>Mentor Registration</h1>
+  <div id="regform">
   <form action="" method="POST" id="formregistration">
-    <label for="first_name">First Name:</label>
-    <input type="text" id="first_name" name="first_name" required> <br><br>
+    <label for="first_name" class="labels">First Name:</label>
+    <input type="text" id="first_name" name="first_name" class="input" placeholder="first name" required> <br><br>
 
-    <label for="last_name">Last Name:</label>
-    <input type="text" id="last_name" name="last_name" required><br><br>
+    <label for="last_name" class="labels">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" class="input" placeholder="last name" required><br><br>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="johndoe@example.com" required><br><br>
+    <label for="email" class="labels">Email:</label>
+    <input type="email" id="email" name="email" placeholder="johndoe@example.com" class="input" required><br><br>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required><br><br>
+    <label for="password" class="labels">Password:</label>
+    <input type="password" id="password" name="password" class="input" placeholder="*****" required><br><br>
 
-    <label for="confirm_password">Confirm Password:</label>
-    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+    <label for="confirm_password" class="labels">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" class="input" placeholder="*****" required><br><br>
 
-    <button type="submit" onclick="registerMentor()">Register</button>
-  </form><br><br>
-  <button type="button" onclick="homepage()"></button>
-
+    <button type="submit" onclick="registerMentor()" id="regbtn">Register</button>
+  <button type="button" onclick="homepage()" id="homebtn">Home</button>
+</form><br><br>
+</div>
 
   <p>By registering, you agree to the <a href="#">Terms and Conditions</a>.</p>
 </body>

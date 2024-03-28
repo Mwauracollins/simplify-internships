@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="/templates/static/css/contact.css">
   <title>About Us -Career Portal</title>
-  <script src="/js/contact.js"></script>
+  <script src="/templates/js/contact.js"></script>
 </head>
 <body>
-
+<div class="main-content">
   <h1>About Us</h1>
   <p>
     Welcome to the University Career Portal, your one-stop shop for navigating your career journey! 
@@ -15,7 +15,7 @@
   </p>
 
   <p>
-    At thce University Career Portal, we are passionate about connecting you with valuable resources and opportunities.
+    At the University Career Portal, we are passionate about connecting you with valuable resources and opportunities. 
     Our platform provides access to:
     <ul>
       <li>Job and internship postings from various companies and organizations.</li>
@@ -35,12 +35,13 @@
   <p>
     <p>Get Started Today!</p>
     <a href="registerstudent.html">Register Now</a><br><br>
-    <a th:href="@{/homepage}">Log In</a>
+    <a href="homepage.html">Log In</a>
   </p>
   <p>Contact us Today</p>
   <a href="mailto:muchiri254timothy@gmail.com">Our Mail</a><br><br>
   <a href="tel: +254702784053">Call us Today</a><br><br>
 
-  <button id="HomePage" onclick="homePage()">Home</butto>
+  <button id="HomePage" onclick="homePage()">Home</button>
+</div>
 </body>
 </html>

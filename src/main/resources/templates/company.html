@@ -1,63 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Company Details</title>
-  <link rel="stylesheet" href="">
-  <script src="/js/company.js"></script>
+  <link rel="stylesheet" href="/templates/static/css/company.css">
+  <script src="/templates/js/company.js"></script>
 </head>
 <body>
   <header>
     <h1>Company Details Page</h1>
     <nav>
       <ul>
-        <li><a href="/homepage.html">Home</a></li>
-        <li><a href="/internship.html">Internships</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="internship.html">Internships</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
+    <div id="form1">
     <h2>Company Details</h2>
    <form action="" method="post" id="companyform">
 
-    <label for="company_id">Company ID</label>
-    <input type="text" name="company_id" id="company_id" required><br><br>
+    <label for="company_id" class="labels">Company ID</label>
+    <input type="text" name="company_id" id="company_id" placeholder="001" required><br><br>
 
-    <label for="company_name">Company Name</label>
+    <label for="company_name" class="labels">Company Name</label>
     <input type="text" id="company_name" id="company_name" required><br><br>
 
-    <label for="company_email">Company Email</label>
-    <input type="email" name="company_email" id="company_id" required><br><br>
+    <label for="company_email" class="labels">Company Email</label>
+    <input type="email" name="company_email" id="company_id" placeholder="companyname@example.com" required><br><br>
 
-    <label for="company_contact">Company Contact</label>
-    <input type="text" name="company_contact" id="company_contact" required><br><br>
+    <label for="company_contact" class="labels">Company Contact</label>
+    <input type="text" name="company_contact" id="company_contact" placeholder="+254-7123456789" required><br><br>
 
-    <label for="company_password">Company Password</label>
-    <input type="password" name="company_password" id="company_password" required><br><br>
+    <label for="company_password" class="labels">Company Password</label>
+    <input type="password" name="company_password" id="company_password" placeholder="******" required><br><br>
 
-    <label for="confirm_password">Confirm Password:</label>
-    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+    <label for="confirm_password" class="labels">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" placeholder="******" required><br><br>
 
-    <button type="submit" onclick="submitCompanyForm()">Submit</button>
+    <button type="submit" class="submitbtn" onclick="submitCompanyForm()">Submit</button>
+    <button type="reset" id="resetbtn">Reset</button>
    </form>
+   </div>
 
-
+   <div id="form2">
     <h2 id="contact">Contact Us</h2>
     <form action="/contact/submit" method="POST" id="contactform" onsubmit="submitContactForm(event)">
-      <label for="name">Name:</label>
+      <label for="name" class="labels">Name:</label>
       <input type="text" name="name" id="name"><br><br>
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email"><br><br>
-      <label for="message">Message:</label>
-      <textarea name="message" id="message"></textarea><br><br>
-      <button type="submit">Send</button>
+      <label for="email" class="labels">Email:</label>
+      <input type="email" name="email" id="email" placeholder="name@example.com"><br><br>
+      <label for="message" class="labels">Message:</label>
+      <textarea name="message" id="message" placeholder="message here"></textarea><br><br>
+      <button class="submitbtn" type="submit">Send</button>
   </form>
-  
+</div>
   </main>
   <footer>
-    <p>&copy; 2024 [Company Name]</p>
+    <p>&copy; 2024 Career Service Portal</p>
   </footer>
 </body>
 </html>

@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Service Portal</title>
-    <link rel="stylesheet" href="homepage.css">
-    <script src="/js/homepage.js"></script>
+    <link rel="stylesheet" href="/templates/static/css/homepage.css">
+    <script src="/templates/js/homepage.js"></script>
 </head>
 <body>;
     
     <div >
         <h1>Welcome Back to your Career Service Portal!</h1>
-
         <p>This portal helps university students find internships and connect with mentors.</p>
+        <p><a href="landing.html">Click here to go back to homepage</a></p>
     </div>
 
     <section class="sect1">
@@ -21,7 +21,7 @@
             <form action="" method="POST" id="studentform">
                 <input type="email" name="email" placeholder="johndoe@example.com" required><br><br>
                 <input type="password" name="password" placeholder="Password" required><br><br>
-                <button type="submit" onclick="loginStudent()">Login</button>
+                <button type="submit" class="btnlogin" onclick="loginStudent()">Login</button>
             </form>
 
             <p><b>New to the platform?</b></p>
@@ -35,7 +35,7 @@
                 <input type="email" name="email" placeholder="johndoe@example.com" required><br><br>
                 <input type="password" name="password" placeholder="Password" required><br><br>
                 
-                <button type="submit" onclick="loginMentor()">Login</button>
+                <button type="submit" class="btnlogin" onclick="loginMentor()">Login</button>
             </form>
             <p><b>New to the platform? </b></p>
             <a href="registermentor.html">Register</a>
@@ -48,7 +48,7 @@
         <form action="" method="POST" id="redirectIntern">
             <input type="email" name="email" placeholder="johndoe@gmail.com" required><br><br>
             <input type="password" name="password" placeholder="Password" required><br><br>
-            <button type="submit" onclick="redirectInternship()">Login</button>
+            <button type="submit" class="btnlogin" onclick="redirectInternship()">Login</button>
         </form>
             
     </section>

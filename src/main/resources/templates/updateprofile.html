@@ -1,40 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="stylesheet" href="/templates/css/updateprofile.css">
+    <link rel="stylesheet" href="/templates/static/css/updateprofile.css">
 </head>
-    <script src="/js/updateprofile.js"></script>
+    <script src="/templates/js/updateprofile.js"></script>
     <title>Personal Information Page</title>
 </head>
 <body>
 
     <h1>Update Personal Details</h1>
 
+    <div class="regleft">
+
     <form method="POST" action="" id="updateform"> 
         <label for="first_name">First Name:</label>
-        <input type="text" id="first_name" name="first_name" required><br><br>
+        <input type="text" id="first_name" name="first_name" class="input" required><br><br>
     
         <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" name="last_name" required><br><br>
+        <input type="text" id="last_name" name="last_name" class="input" required><br><br>
     
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required autocomplete="email"><br><br>
+        <input type="email" id="email" name="email" required autocomplete="email" class="input"><br><br>
     
         <label for="student_id">Student ID:</label>
-        <input type="text" id="student_id" name="student_id" required><br><br>
+        <input type="text" id="student_id" name="student_id" class="input" required><br><br>
     
         <label for="major">Major:</label>
-        <input type="text" id="major" name="major" required><br><br>
+        <input type="text" id="major" name="major" class="input" required><br><br>
     
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
+        <input type="password" id="password" name="password" class="input" required><br><br>
     
         <label for="confirm_password">Confirm Password:</label>
-        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+        <input type="password" id="confirm_password" name="confirm_password" class="input" required><br><br>
     
-        <button type="submit" onclick="updateInfo()">Update</button><br><br>
-        <button type="reset">Reset</button><br><br>
-        <button type="button" onclick="homePage()">Home</button>
+        <button type="submit" id="submitbtn" onclick="updateInfo()">Update</button><br><br>
+        <button type="reset" id="resetbtn">Reset</button><br><br>
+        <button type="button" id="homebtn" onclick="homePage()">Home</button>
     </form>
+    </div>
 </body>
 </html>

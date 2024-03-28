@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Registration - University Career Portal</title>
-  <link rel="stylesheet" href="registerstudent.css">
-  <script src="/js/student.js"></script>
+  <link rel="stylesheet" href="/templates/static/css/registerstudent.css">
+  <script src="/templates/js/student.js"></script>
 </head>
-<body>;
+<body>
 
 
   <div class="regleft">
@@ -20,15 +20,14 @@
   </div>
 
   <div class="regright">
-    <h2 style="font-family: arial;font-size: x-large;">Get Started </h2>
-    <p style="font-family: arial;font-size: large;">Already have an account <a href="">Log in?</p>
-  <form action="" method="POST">
+    <h2 style="font-family: arial;font-size: x-large;">Get Started (Student Registration) </h2>
+    <p style="font-family: arial;font-size: large;">Already have an account <a href="homepage.html">Log in?</a></p>
+  <form action="" method="POST" id="registrationForm">
     
-    <input placeholder="First name" type="text" id="first_name" name="first_name" required
-    class="input"><br><br>
+    <input placeholder="First name" type="text" id="first_name" name="first_name" required class="input"><br><br>
 
 
-    <input placeholder="Last name" type="text" id="last_name" name="last_name" required class="input"><br><br>
+    <input placeholder="Last name" type="text"  id="last_name" name="last_name" required class="input"><br><br>
 
     
     <input placeholder="Email" type="email" id="email" name="email" required class="input"><br><br>
@@ -45,12 +44,11 @@
     
     <input placeholder="Confirm password" type="password" id="confirm_password" name="confirm_password" required class="input"><br><br>
 
-    <button class="register"
-    type="submit">Register</button>
+    <button class="register" type="submit" onclick="registerStudent()">Register</button><br><br>
   </form>
-
-  <p>By registering, you agree to the <a href="#">Terms and Conditions</a>.</p>
-  <button class=home id="homePage" onclick="homePage()">Home</button>
+  <button class="home" id="homePage" onclick="homePage()">Home</button>
+  <p id="last-p">By registering, you agree to the <a href="#">Terms and Conditions</a>.</p>
+  
   </div>
 </body>
 </html>

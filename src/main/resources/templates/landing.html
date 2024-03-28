@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="device-width, initial-scale=1.0">
   <title>University Career Portal</title>
-  <link rel="stylesheet" href="">
-  <script src="/js/landing.js"></script>
+  <link rel="stylesheet" href="/templates/static/css/Landing.css">
+  <script src="/templates/js/landing.js"></script>
 </head>
 <body>
   <header>
@@ -13,6 +13,7 @@
     <nav>
       <ul>
         <li ><a href="landing.html">Home</a></li>
+        <li><a href="company.html">Company</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="registerstudent.html">Register</a></li>
         <li><a href="homepage.html">Login</a></li>
@@ -21,11 +22,13 @@
   </header>
   <main>
     <section>
-      <h2>Empowering your career journey</h2>
-      <p>Connecting students with mentors and internships to help them build a bright future.</p>
+      <div id="heading1">
+        <h2>Empowering your career journey</h2>
+        <p>Connecting students with mentors and internships to help them build a bright future.</p>
+      </div>
       <button type="button" onclick="registerNow()">Register Now</button>
     </section>
-    <section>
+    <section class="sect">
       <h2>Benefits for Students</h2>
       <ul>
         <li>Find relevant internship opportunities</li>
@@ -41,10 +44,16 @@
         <li>Expand your professional network</li>
       </ul>
     </section>
-    <section>
+    <section id="sect2">
+      <div id="head2">
       <h2>What people are saying</h2>
-      <p>"This portal helped me find my dream internship!" - John Doe, Student</p>
-      <p>"Mentoring students has been a rewarding experience." - Jane Smith, Mentor</p>
+      </div>
+      <div id="student1">
+        <p>"This portal helped me find my dream internship!" - John Doe, Student</p>
+      </div>
+      <div id="student2">
+        <p>"Mentoring students has been a rewarding experience." - Jane Smith, Mentor</p>
+        </div>
     </section>
   </main>
   <footer>

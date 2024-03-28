@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Application Form</title>
-  <link rel="stylesheet" href="">
-  <script src="/js/applications.js"></script>
+  <link rel="stylesheet" href="/templates/static/css/applications.css">
+  <script src="/templates/js/applications.js"></script>
 </head>
 <body>
   <h1>Student Application Form</h1>
+  <div id="formreg">
   <form id="applicationForm">
-    <label for="studentName">Student Name:</label><br>
-    <input type="text" id="studentName" name="studentName" required><br><br>
+    <label for="studentName" class="labels">Student Name:</label>
+    <input type="text" id="studentName" name="studentName" class="input" placeholder="Student full name" required><br><br>
     
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+    <label for="email" class="labels">Email:</label>
+    <input type="email" id="email" name="email" class="input" placeholder="johndoe@example.com" required><br><br>
     
-    <label for="phone">Phone Number:</label><br>
-    <input type="tel" id="phone" name="phone" required><br><br>
+    <label for="phone" class="labels">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" class="input" placeholder="0712345678" required><br><br>
     
-    <label for="cv">CV Submission:</label><br>
+    <label for="cv" class="labels">CV Submission:</label>
     <input type="file" id="cv" name="cv" required><br><br>
 
-    <label for="internship">Choose the internship you seek:</label>
-    <select name="internship">
+    <label for="internship" class="labels">Choose the internship you seek:</label>
+    <select name="internship" class="input">
         <option value="art">Art Internships</option>
         <option value="business">Business Internships</option>
         <option value="business_management">Business Management Internships</option>
@@ -36,10 +37,11 @@
         <option value="sales">Sales Internships</option>
     </select><br><br>
     
-    <button type="submit">Submit Application</button><br><br>
+    <button type="submit" id="submitbtn">Submit Application</button><br><br>
 
-    <button type="button" onclick="studentPage()">Student Page</button>
+    <button type="button" id="studentbtn" onclick="studentPage()">Student Page</button>
   </form>
+  </div>
   <p id="responseMessage" style="display: none;"></p>
 </body>
 </html>
