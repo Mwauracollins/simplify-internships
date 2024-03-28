@@ -5,16 +5,19 @@ body{
    text-align: center; 
    border: 20px;
    background-size: cover;
+   background-color: antiquewhite;
 }
 
 button{
-    background-color: gainsboro;
+    background-color: lightgreen;
     border-radius: 10px;
     width: 2.5cm;
     height: 30px;
     font-size: large;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    border: 0cap
+    border: 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 input{
@@ -22,13 +25,18 @@ input{
     width: 250px;
     border-radius: 5px;
     border: 0cap;
+    transition: all 0.5s ease;
 
+}
+
+input:hover{
+    transform: translateY(5%);
 }
 
 .sect1{
     display: flex;
     flex-direction: row;
-    height: 8cm;
+    height: 10cm;
     gap: 20px;
 
 }
@@ -53,5 +61,11 @@ input{
 .sect2{
     background-color: cornflowerblue;
     border-radius: 30px;
+    height: 7cm;
     
+}
+.btnlogin:hover{
+    background-color: green;
+    color: white;
+    transform: translateY(-10%);
 }

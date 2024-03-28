@@ -1,5 +1,5 @@
 body{
-    background-image: url(/templates/pics/app2.jpg);
+    background-image: url(/templates/static/picturess/application.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-size: large;
@@ -8,25 +8,54 @@ body{
    
     
 }
-button{
-    font: bold;
-    color: blue;
-   
 
-}
-button:hover{
-    color: red;
-}
-input{
-    box-sizing: border-box;
-    padding: 5px 0;
-    width: 35%;
-}
 h1{
-    text-align: left;
-}
-form{
-   margin-left: 25%;
-   margin-top: 5%;
+    text-align: center;
 }
 
+#formreg{
+    margin-left: 700px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    height: 30px;
+    background-color: transparent;
+}
+.labels{
+    font-weight: bolder;
+}
+.input{
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    border: 0cap;
+    background-color: gainsboro;
+    font-weight: bold;
+}
+.input:hover{
+    transition: all 0.5s ease;
+    transform: translateY(5%);
+}
+
+#submitbtn{
+    background-color: gainsboro;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    border-radius: 10px;
+}
+#submitbtn:hover{
+    background-color: lightgreen;
+    transition: all 0.5s ease;
+    transform: translateY(5%);
+}
+
+#studentbtn{
+    background-color: gainsboro;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    border-radius: 10px;
+}
+#studentbtn:hover{
+    background-color: crimson;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(10%);
+}

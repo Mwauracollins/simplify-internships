@@ -1,33 +1,51 @@
 body{
-    background-color: lightblue;
-    text-align: center;
+    background-color:gainsboro;
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 footer p{
-        margin-top: 260%;
-        align-content: center;
+        margin-top: 400%;
+        align-content: left;
 }
 
 h1{
-  margin-bottom: 30%;
   color: crimson;
-}
-body main{
-    text-align: center;
-    margin: 2%;
-    font-size: large;
-    justify-content: center;
-}
-button:hover{
-    color: crimson;
+  margin-left: 750px;
+  position: absolute;
+  
 }
 button{
     color: black;
     font: bold;
+    background-color: gainsboro;
+    border-radius: 5px;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-input{
-    width: 70%;
+.input{
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    border: 0cap;
+}
+.input:hover{
+    transition: all 0.5s ease;
+    transform: translateY(5%);
+}
+#logleft{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    background-color: darkcyan;
+    width: 25%;
+    border-radius: 0 30px;
+    padding: 70px;
+    height: 13.5cm;
+    margin-top: 5%;
+    margin-left: 600px;
+
+
+
 }

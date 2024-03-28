@@ -1,5 +1,5 @@
 body{
-    background-image: url(/static/picturess/background.jpg);
+    background-image: url(/templates/static/picturess/background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,20 +21,20 @@ nav{
     font-size: 20px;
 }
 nav a{
-color: white;
+color: orange;
 list-style: none;
 margin-left: 62px;
 margin-top: 27px;
 text-decoration: none;
 font-family: Arial;
 font-weight: bold;
-transition: 0.4s ease-in-out;
+transition: all 0.5s ease;
 }
 nav a:hover{
-    color: orange;
+    color: lightblue;
 }
 main{
-    color:white;
+    color:whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #head1{
@@ -54,7 +54,46 @@ button {
   }
   
   button:hover {
-    background-color: lightgreen; /* Darker blue on hover */
+    background-color: lightgreen; 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Add a subtle shadow */
+    transform: translateY(5%);
+    font-weight: bold;
   }
-  
+
+  .sect{
+    transition: all 0.5s ease;
+  }
+  .sect:hover{
+    transform: translateX(5%);
+  }
+ #sect2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    
+ }
+ #student1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    background-color: #007bff;
+    width: 20%;
+    border-radius: 0 30px;
+    padding: 50px;
+    transition: all 0.5s ease;
+ }
+ #student1:hover{
+    transform: translateY(10%);
+ }
+ #student2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    background-color: #007bff;
+    width: 20%;
+    border-radius: 0 30px;
+    padding: 50px;
+    transition: all 0.5s ease;
+ }
+ #student2:hover{
+    transform: translateY(10%);
+ }

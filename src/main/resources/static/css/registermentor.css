@@ -1,0 +1,73 @@
+*{
+    margin: 5px;
+    padding: 5px;
+}
+body{
+    background-image: url(/templates/static/picturess/mentor.jpg); 
+    background-size: cover; 
+    background-position: center;
+    height: -10vh;
+    padding-bottom: 20px;
+   
+}
+h1{
+    text-align: center;
+    color: orange;
+    font-weight: bolder;
+    font-size: 70px;
+
+
+}
+p{
+    margin-top: 40%;
+}
+#regform{
+    margin-top: 2%;
+    margin-left: 700px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    background-color: transparent;
+    height: 30px;
+}
+.input{
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    border: 0cap;
+    background-color: gainsboro;
+    font-weight: bold;
+}
+.input:hover{
+    transition: all 0.5s ease-in-out;
+    transform: translateY(5%);
+}
+#regbtn{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    border-radius: 10px;
+    background-color: lightgreen;
+    border: none;
+}
+#regbtn:hover{
+    transition: all 0.5s ease;
+    transform: translateY(-10%);
+    background-color: green;
+    color: white;
+    
+}
+#homebtn{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    border-radius: 10px;
+    background-color: red;
+    border: none;
+}
+#homebtn:hover{
+    transition: all 0.5s ease;
+    transform: translateY(10%);
+    background-color: darkred;
+    color: white;
+}
+.labels{
+    font-weight: bolder;
+}

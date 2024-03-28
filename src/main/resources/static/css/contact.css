@@ -1,5 +1,5 @@
 body{
-  background-image: url(/templates/pics/cont1.jpg);
+  background-image: url(/templates/static/picturess/contact.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -13,17 +13,31 @@ body{
 }
 a:hover{
   color: blueviolet;
+  transition: all 0.5s ease;
+  transform: translateY(10%);
 }
 button{
   color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  background-color: gainsboro;
+  border-radius: 10px;
 }
 button:hover{
-  color: blueviolet;
+  background-color: lightblue;
+  transition: all 0.5s ease;
+  transform: translateY(5%);
 }
 p,li,button{
   font-weight: bold
 }
 h1{
   color: orange;
+  font-size: xx-large;
+}
+.main-content{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  font-weight: bolder;
 }
 

@@ -7,14 +7,74 @@ body{
     display: inline;
 
 }
-input{
-    box-sizing: border-box;
+
+
+#submitbtn{
+    background-color: lightgreen;
+    border-radius: 10px;
+    width: 2.5cm;
+    height: 30px;
+    font-size:x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 0cap;
+    transition: all 0.5s ease;
 }
-button:hover{
-    color: blue;
+#submitbtn:hover{
+    background-color: green;
+    color: white;
+    transform: translateY(10%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
-button{
+
+#resetbtn{
+    background-color: red;
+    border-radius: 10px;
+    width: 2.5cm;
+    height: 30px;
+    font-size:x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 0cap;
+    transition: all 0.5s ease;
+}
+
+#resetbtn:hover{
+    background-color: darkred;
+    color: white;
+    transform: translateY(10%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+#homebtn{
+    background-color:  #007bff;
+    border-radius: 10px;
+    width: 2.5cm;
+    height: 30px;
+    font-size:x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 0cap;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+#homebtn:hover{
+    background-color: blue;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(10%);
+}
+
+.regleft{
+    padding: 100px;
     background-color: cadetblue;
-    font-size: medium;
-}
+    width: 9cm;
+    height: 10cm;
+    border-radius: 30px 30px;
+    margin-left: 700px;
+    }
+    .input{
+        height: 25px;
+        width: 200px;
+        border-radius: 5px;
+        border: 0cap;
+    }
+   
 
